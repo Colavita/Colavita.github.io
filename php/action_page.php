@@ -1,5 +1,11 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+
 if (isset($_POST['Submit'])) {
+
+    require '../vendor/autoload.php';
+    $mail = new PHPMailer();
+
     $fname = $_POST['firstname'];
     $lname = $_POST['lastname'];
     $mailfrom = $_POST['email'];
