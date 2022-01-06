@@ -1,0 +1,115 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Roboto+Mono:wght@100&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/styles.css" />
+		<title>Contact</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="nav-wrapper">
+				<div class="left-side">
+					<div class="nav-link-wrapper">
+						<a href="index.html">Home</a>
+					</div>
+					<div class="nav-link-wrapper">
+						<a href="work.html">Work</a>
+					</div>
+					<div class="nav-link-wrapper">
+						<a href="../Other/Matteo_Colavita_Resume_2021.pdf" target="_blank">Resumé</a>
+					</div>
+					<div class="nav-link-wrapper active-nav-link">
+						<a href="contact.html">Contact</a>
+					</div>
+				</div>
+				<div class="right-side">
+					<div class="brand">
+						<div><!--Nom--></div>
+						<div class="nav-linkedin-wrapper">
+							<a href="https://www.linkedin.com/in/mattéo-colavita-4b3a99208" target="_blank">
+								<img src="../images/LI-In-Bug.png" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid-content-wrapper">
+				<div class="grid-element-wrapper">
+					<form class="form-wrapper" action="../php/action_page.php" method="POST">
+						<label class="input-title-wrapper" for="fname">First Name</label>
+						<input
+							class="input-wrapper"
+							type="text"
+							id="fname"
+							name="firstname"
+							placeholder="Your name.."
+						/>
+
+						<label class="input-title-wrapper" for="lname">Last Name (Required)</label>
+						<input
+							class="input-wrapper"
+							type="text"
+							id="lname"
+							name="lastname"
+							placeholder="Your last name.."
+							required
+						/>
+
+						<label class="input-title-wrapper" for="email">Email (Required)</label>
+						<input
+							class="input-wrapper"
+							type="text"
+							id="email"
+							name="emailadress"
+							placeholder="Your email.."
+							required
+						/>
+
+						<label class="input-title-wrapper" for="subject">Subject</label>
+						<textarea
+							id="subject"
+							class="input-wrapper"
+							name="subject"
+							placeholder="Write something.."
+							style="height: 200px"
+							required
+						></textarea>
+
+						<label class="input-title-wrapper" for="file">File</label>
+						<input type="file" class="input-wrapper" id="file" name="uploadfile">
+					
+						</input><br><br>
+
+						<input type="submit" value="Submit" />
+					</form>
+				</div>
+				<div class="grid-element-wrapper">
+					<div class="line-wrapper"></div>
+				</div>
+				<div class="grid-element-wrapper">
+					<aside class="contact-info-wrapper">
+						<div class="name">Name: Mattéo Colavita</div>
+						<!--<div class="Phone">Phone: (514) 226-0104</div>-->
+						<div class="email">
+							Email: <a href="mailto:m.colavita@bell.net">m.colavita@bell.net</a>
+						</div>
+						<div class="city">Montréal, Québec, Canada</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
