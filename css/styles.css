@@ -130,6 +130,14 @@ body::-webkit-scrollbar {
 	animation: transitionIn 0.5s;
 }
 
+.brand {
+	justify-content: space-between;
+}
+
+.disclaimer {
+	color: White;
+}
+
 .nav-linkedin-wrapper img {
 	height: 1.5em;
 	opacity: 50%;
@@ -190,9 +198,9 @@ body::-webkit-scrollbar {
 
 	/* Use the text as a mask for the background. */
 	/* This will show the gradient as a text color rather than element bg. */
-	-webkit-background-clip: text;
+	/*-webkit-background-clip: text;*/
 	-webkit-text-fill-color: transparent;
-	-moz-background-clip: text;
+	/*-moz-background-clip: text;*/
 	-moz-text-fill-color: transparent;
 }
 .example--2 {
@@ -342,9 +350,9 @@ body::-webkit-scrollbar {
 	background-size: 100%;
 	cursor: pointer;
 	background-repeat: repeat;
-	-webkit-background-clip: text;
+	/*-webkit-background-clip: text;*/
 	-webkit-text-fill-color: transparent;
-	-moz-background-clip: text;
+	/*-moz-background-clip: text;*/
 	-moz-text-fill-color: transparent;
 }
 /*
